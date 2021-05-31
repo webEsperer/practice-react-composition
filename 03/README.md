@@ -1,4 +1,9 @@
-# [![](../assets/img/logo-readme2.jpg)](https://devmentor.pl) &nbsp; React composition #03
+> :star: *Jeśli będziesz mieć problem z rozwiązaniem tego zadania, poproś o pomoc na odpowiednim kanale na Slacku, tj. `s2e03-react-composition` (dotyczy [mentee](https://devmentor.pl/mentoring-javascript/)). Pamiętaj, aby treść Twojego wpisu spełniała [odpowiednie kryteria](https://devmentor.pl/jak-prosic-o-pomoc/).*
+
+&nbsp;
+
+# `#03` React: Kompozycja
+
 
 Ponownie będziemy operować na produktach. Jednak tym razem będziemy chcieli umożliwić wybór produktu do zakupu oraz go usunać z koszyka jeśli taka będzie wola użytkownika.
 
@@ -46,4 +51,6 @@ const list = ... .map( ... );
     { list }
 </Category>
 ```
+&nbsp;
 
+> :arrow_left: [*poprzednie zadanie*](./../02) | [*następne zadanie*](./../04) :arrow_right:
