@@ -1,4 +1,9 @@
-# [![](../assets/img/logo-readme2.jpg)](https://devmentor.pl) &nbsp; React composition #05
+> :star: *Jeśli będziesz mieć problem z rozwiązaniem tego zadania, poproś o pomoc na odpowiednim kanale na Slacku, tj. `s2e03-react-composition` (dotyczy [mentee](https://devmentor.pl/mentoring-javascript/)). Pamiętaj, aby treść Twojego wpisu spełniała [odpowiednie kryteria](https://devmentor.pl/jak-prosic-o-pomoc/).*
+
+&nbsp;
+
+# `#05` React: Kompozycja
+
 
 Naszym zadaniem będzie napisanie rozwiązanie dla komponentu `<Textarea />`, które będzie zwiększać wysokość dla znacznika `<textarea />` w przypadku gdy wielkość tekstu będzie powodować pojawianie się paska przewijania. Z zatrzeżeniem, że `<textarea />` może zwiększać wysokość dopóki nie przekracza `100px`.
 
@@ -12,6 +17,6 @@ W metodzie `.componentDidMount()` zmodyfikuj wysokość dla `<teaxtarea />` jeś
 
 Aby móc sprawdzić wysokość `<textarea />` musisz utworzyć referencje dla tego elementu.
 
+&nbsp;
 
-
-
+> :arrow_left: [*poprzednie zadanie*](./../04) | ~~*następne zadanie*~~ :arrow_right:
