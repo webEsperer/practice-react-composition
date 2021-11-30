@@ -1,3 +1,4 @@
+
 > :star: *Jeśli będziesz mieć problem z rozwiązaniem tego zadania, poproś o pomoc na odpowiednim kanale na Slacku, tj. `s2e03-react-composition` (dotyczy [mentee](https://devmentor.pl/mentoring-javascript/)). Pamiętaj, aby treść Twojego wpisu spełniała [odpowiednie kryteria](https://devmentor.pl/jak-prosic-o-pomoc/).*
 
 &nbsp;
@@ -5,30 +6,30 @@
 # `#03` React: Kompozycja
 
 
-Ponownie będziemy operować na produktach. Jednak tym razem będziemy chcieli umożliwić wybór produktu do zakupu oraz go usunać z koszyka jeśli taka będzie wola użytkownika.
+Ponownie będziemy operować na produktach. Tym razem umożliwimy użytkownikowi wybór produktu do zakupu oraz jego usunięcie z koszyka.
 
 
-Do zrealizowania zadania będziemy potrzebować 3 komponentów:
-* `<Category />` - wyświetla listę dostępnych produktów. Produkty są renderowane dzięki komponentowi `<Product />`
-* `<Cart />` - wyświetla listę wybranych produktów do zakupu. Produkty do zakupu są również renderowane przez komponent `<Product />`
-* `<Product />` - pozwala wyświetlić informacje o produkcie. 
+Do zrealizowania zadania potrzebujemy 3 komponentów:
+* `<Category />` – wyświetla listę dostępnych produktów. Produkty są renderowane dzięki komponentowi `<Product />`
+* `<Cart />` – wyświetla listę produktów wybranych do zakupu. Produkty te są również renderowane przez komponent `<Product />`
+* `<Product />` – wyświetla informacje o produkcie.
 
-## <Product />
+## `<Product />`
 
-Zauważ, że ten komponent jest wykorzystywany w 2 różnych miejscach. 
+Zauważ, że ten komponent jest wykorzystywany w dwóch różnych miejscach. 
 
-W `<Category />` mamy mieć możliwość zakupu tego produktu, więc przydałby się przycisk "dodaj do koszyka". Jeśli ten produkt został już dodany do koszyka to ten przycisk ma być nieaktywny tj. "disabled".
+W `<Category />` mamy mieć możliwość zakupu tego produktu, więc przydałby się przycisk „dodaj do koszyka”. Jeśli ten produkt został już dodany do koszyka, to przycisk powinien być nieaktywny (`disabled`).
 
-Natomiast w `<Cart />` będzie potrzebny przycisk "usuń z koszyka".
+Natomiast w `<Cart />` będzie potrzebny przycisk „usuń z koszyka”.
 
-Obie akcje tj. dodawanie i usuwanie mają być realizowane na danych w `<App />` dlatego to tam będziemy musieli zdefiniować odpowiednie metody i przekazać je do odpowiednich komponentów.
+Obie akcje, tj. dodawanie i usuwanie, mają być realizowane na danych w `<App />`, dlatego to tam będziemy musieli zdefiniować odpowiednie metody i przekazać je do odpowiednich komponentów.
 
-Rozróżnienie w `<Product />`, które rozwiązanie ma być implementowane można przypisać odpowiedniemu props np. `<Product isCategory={ true } />` lub `<Products isCart={ true } />`.
+Aby w `<Product />` rozróżnić, które rozwiązanie (dla kategorii czy koszyka) ma być implementowane, można temu komponentowi przekazywać odpowiednie props, np. `<Product isCategory={ true } />` lub `<Product isCart={ true } />`.
 
-Spróbuj renderować produkty między komponentami tj. jako ich dzieci:
+Spróbuj renderować produkty między znacznikami rodzica, tj. jako dzieci tego komponentu:
 
 ```
-<Cataegory>
+<Category>
     <Product />
     <Product />
 </Category>
@@ -43,7 +44,7 @@ lub
 </Cart>
 ```
 
-Możesz używać do tego odpowiedniej zmiennej i .map() np:
+Możesz użyć do tego odpowiedniej zmiennej i metody `.map()`, np.:
 
 ```
 const list = ... .map( ... );
