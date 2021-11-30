@@ -4,17 +4,17 @@
 
 # `#04` React: Kompozycja
 
-Tym razem naszym zadaniem jest wyświetlenie zawartości wybranych plików tekstowych poprzez pole formularza.
+Tym razem naszym zadaniem jest wyświetlenie zawartości plików **tekstowych** pobranych przez pole formularza.
 
-W komponencie `<App />` mamy `state`, w którym będziemy przechowywać informacje o zawartości pliku, jego nazwie oraz rozmiarze. 
+W komponencie `<App />` mamy `state`, w którym będziemy przechowywać dane wgranych plików: ich zawartość nazwę i rozmiar.
 
-Pamiętaj, aby również dodać uniklane id. Możesz użyć do tego [uuid](https://www.npmjs.com/package/uuid), który opisuję w materiałach.
+Pamiętaj, aby dodać do nich unikalne id. Możesz użyć do tego [uuid](https://www.npmjs.com/package/uuid), który opisuję w materiałach.
 
 Zapisane dane powinniśmy przekazać do komponentu `<List />` i w nim je wyrenderować.
 
 ## Podpowiedź
 
-Zawartość pliku możesz pobrać za pomocą [FileReader](https://developer.mozilla.org/en-US/docs/Web/API/FileReader), który opisywałem w materiałach na temat formularzy (ang Forms).
+Zawartość pliku możesz pobrać za pomocą [FileReadera](https://developer.mozilla.org/en-US/docs/Web/API/FileReader), który opisywałem w materiałach na temat formularzy.
 
 &nbsp;
 
