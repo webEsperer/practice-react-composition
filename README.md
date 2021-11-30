@@ -4,16 +4,16 @@
 
 # React: Kompozycja
 
-Kompozycja to jeden ze sposobów bodowania aplikacji. W React występują komponenty, z których budujemy całą aplikację. Wykorzystanie mniejszych komponentów do budowania większych jest właśnie kompozycją.
+Kompozycja to jeden ze sposobów budowania aplikacji. W Reakcie występują komponenty, z których „składamy” potem całą aplikację. Wykorzystanie mniejszych komponentów do budowania większych jest właśnie kompozycją.
 
-Wyzwania jakie będę przed Tobą stały w przygotowanych zadaniach mają na celu sprawdzenie czy potrafisz sprawnie budować aplikację przy pomocy kompozycji i tworzyć sprawne kanały komunikacji pomiędzy komponentami i elementami DOM.
+Zadania z tego repozytorium pozwolą Ci sprawdzić, czy potrafisz tworzyć aplikacje przy pomocy kompozycji i zadbać o sprawną komunikację pomiędzy komponentami i elementami DOM.
 
-Przed przystąpniem do zadań powinieneś poznać:
+Przed przystąpieniem do zadań powinieneś poznać:
 * złożone komponenty
 * przekazywanie do dzieci stanu wewnętrznego komponentu (`state`) oraz metod (funkcji w klasie)
 * zarządzanie dziećmi przekazanymi przez props
 * referencje do elementów DOM i komponentów
-* zaawansowane metody cyklu życia np. .getSnapshotBeforeUpdate()
+* zaawansowane metody cyklu życia, np. `.getSnapshotBeforeUpdate()`
 
 &nbsp;
 
