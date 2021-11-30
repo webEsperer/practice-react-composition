@@ -5,17 +5,19 @@
 # `#05` React: Kompozycja
 
 
-Naszym zadaniem będzie napisanie rozwiązanie dla komponentu `<Textarea />`, które będzie zwiększać wysokość dla znacznika `<textarea />` w przypadku gdy wielkość tekstu będzie powodować pojawianie się paska przewijania. Z zatrzeżeniem, że `<textarea />` może zwiększać wysokość dopóki nie przekracza `100px`.
+W tym zadaniu w komponencie `<Textarea />` stworzysz pole tekstowe, które zwiększa swoją wysokość wraz z rosnącą liczbą wierszy.
 
-Zauważ, że `state` przechowujący treść pola formularza jest w `<App />` i tak ma zostać czyli zawartość komponentu `<Textarea />` jest kontrolowana przez ten `state`. 
+Wysokość elementu `<textarea />` ma się zacząć zwiększać w momencie, w którym normalnie pojawiłby się pionowy pasek przewijania, i skończyć rosnąć przy wysokości `100px`.
+
+Zauważ, że `state` przechowujący treść pola formularza jest w `<App />` i niech tak zostanie – zawartość komponentu `<Textarea />` ma być kontrolowana przez stan w `<App />`. 
 
 ## Podpowiedź
 
-Użyj `.getSnapshotBeforeUpdate()`, które pozwoli sprawdzić wysokość `<textarea />` (`.offsetHeight`) jeszcze przed aktualizacją danych. Zwróć w tej metodzie informacje, które będą określać czy wysokość po aktualizacji ma zostać zmieniona (np. `{ resize: true }`).
+Użyj metody `.getSnapshotBeforeUpdate()` – pozwoli to sprawdzić wysokość `<textarea />` (`.offsetHeight`) jeszcze przed aktualizacją danych. Zwróć w tej metodzie informacje, które będą określać, czy wysokość po aktualizacji ma zostać zmieniona (np. `{ resize: true }`).
 
-W metodzie `.componentDidMount()` zmodyfikuj wysokość dla `<teaxtarea />` jeśli `.offsetHeight < .scrollHeight` oraz gdy `snapshot.resize` jest równe `true`.
+W metodzie `.componentDidMount()` zmodyfikuj wysokość dla `<teaxtarea />`, jeśli `.offsetHeight < .scrollHeight` oraz gdy `snapshot.resize` jest równe `true`.
 
-Aby móc sprawdzić wysokość `<textarea />` musisz utworzyć referencje dla tego elementu.
+Aby móc sprawdzić wysokość `<textarea />`, musisz utworzyć referencję dla tego elementu.
 
 &nbsp;
 
