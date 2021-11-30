@@ -4,13 +4,13 @@
 
 # `#02` React: Kompozycja
 
-Tym razem naszym zadaniem będzie implementacja kodu, który pozwoli nam uzupełniać listę użytkowników.
+Tym razem Twoim zadaniem jest implementacja kodu, który pozwoli uzupełniać listę użytkowników.
 
-W momencie kiedy uzytkonik wpisze imię i nazwisko do formularza i kliknie przycisk to dane z formularza mają zostać dodane do state w komponencie `<App />`.
+Kiedy użytkownik wpisze w formularzu imię i nazwisko i kliknie przycisk, to dane z formularza mają zostać dodane do `state` w komponencie `<App />`.
 
-Komponent form ma być niekontrolowany, a dane należy przekazać do rodzica. Skoro `state` jest w rodzicu to tam trzeba utworzyć metodę, która będzie aktualizować `state`. Natomiast odniesienie do niej przekazać do `<Form />`, w którym zostanie wywołana dzięki `props`.
+Komponent `<Form />` ma być niekontrolowany. Dane z pól należy przekazać do rodzica. Skoro `state` jest w rodzicu, to tam trzeba utworzyć metodę, która ten stan będzie aktualizować. Odniesienie do tej metody trzeba przekazać do `<Form />`, w którym zostanie odebrane dzięki `props` i umieszczone przez Ciebie w odpowiednim miejscu.
 
-Komponent `<List />` renderować aktualną listę użytkoników przekazywanych przez `props`. Każdy z elementów tablicy `this.state.usersList` ma być renderowany przez komponent `<ListItem />`. Tutaj również można wykorzystać `.map()`.
+Komponent `<List />` ma renderować aktualną listę użytkowników przekazywanych przez `props`. Każdy z elementów tablicy `this.state.usersList` ma być renderowany przez komponent `<ListItem />`. Tutaj również możesz wykorzystać `.map()`.
 
 
 &nbsp;
