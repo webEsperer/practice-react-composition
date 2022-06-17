@@ -15,7 +15,7 @@ Zauważ, że `state` przechowujący treść pola formularza jest w `<App />` i n
 
 Użyj metody `.getSnapshotBeforeUpdate()` – pozwoli to sprawdzić wysokość `<textarea />` (`.offsetHeight`) jeszcze przed aktualizacją danych. Zwróć w tej metodzie informacje, które będą określać, czy wysokość po aktualizacji ma zostać zmieniona (np. `{ resize: true }`).
 
-W metodzie `.componentDidMount()` zmodyfikuj wysokość dla `<teaxtarea />`, jeśli `.offsetHeight < .scrollHeight` oraz gdy `snapshot.resize` jest równe `true`.
+W metodzie `.componentDidUpdate()` zmodyfikuj wysokość dla `<teaxtarea />`, jeśli `.offsetHeight < .scrollHeight` oraz gdy `snapshot.resize` jest równe `true`.
 
 Aby móc sprawdzić wysokość `<textarea />`, musisz utworzyć referencję dla tego elementu.
 
