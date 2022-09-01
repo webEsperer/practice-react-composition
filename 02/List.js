@@ -10,4 +10,4 @@ function List(props) {
     )
 }
 
-export default ListItem;
+export default List;
