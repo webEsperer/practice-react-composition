@@ -13,10 +13,7 @@ module.exports = {
         // definiuje ścieżką wyjściową
         filename: 'app.min.js',
         // definiuję nazwę pliku wyjściowego
-    },
-    target: "web", 
-    // niezbędne do uruchomienia automatycznego odświeżania z webpack-dev-server@3
-    // https://github.com/webpack/webpack-dev-server/issues/2758
+    }
     module: {
         rules: [
             {
