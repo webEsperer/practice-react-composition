@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
 import Category from './Category';
 import Cart from './Cart';
@@ -21,7 +21,5 @@ class App extends React.Component {
     }
 }
 
-ReactDOM.render(
-    <App />, 
-    document.querySelector('#root')
-);
+const root = createRoot(document.querySelector('#root'));
+root.render(<App />);
