@@ -13,7 +13,7 @@ module.exports = {
         // definiuje ścieżką wyjściową
         filename: 'app.min.js',
         // definiuję nazwę pliku wyjściowego
-    }
+    },
     module: {
         rules: [
             {
